@@ -2,10 +2,7 @@
     <category>
         <pattern>WHAT IS *</pattern>
         <template>
-            <think>
-                <set name="wildcard"><star index="1"/></set>
-            </think>
-
+            <think><set name="wildcard"><star index="1"/></set></think>
             <condition name="wildcard">
                 <li value="generic knowledge">Generic knowledge is relevant to more than one application or domain.</li>
                 <li value="domain-specific knowledge">Domain-specific knowledge is only applicable to one specific application or domain.</li>
@@ -14,17 +11,14 @@
                 <li value="a rule">A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.</li>
                 <li value="a rule mybot">A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.</li>
                 <li value="a fact">A fact is a statement which asserts that a relationship holds for an object-subject pair.</li>
-            
                 <li value="the way AIML supports context during a conversation">
                     <think><set name="context">conversation</set></think>
                     AIML supports context through the use of the that tag to refer to previous bot answers, and via setting variables such as topic.
                 </li>
-
                 <li value="the way that AIML allows variables in its long-term knowledge">
                     <think><set name="context">variables</set></think>
                     AIML has wildcards and srai for that purpose.
                 </li>
-            
             </condition>
         </template>
     </category>
@@ -79,7 +73,6 @@
                     All coursework for this module is run through automatic and effective plagiarism checks.
                 </li>
             </condition>
-
         </template>
     </category>
 
@@ -116,5 +109,4 @@
             </condition>
         </template>
     </category>
-
 </aiml>
