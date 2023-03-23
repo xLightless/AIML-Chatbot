@@ -1,6 +1,6 @@
-<SCORE>44</SCORE>
+<SCORE>65</SCORE>
 <MESSAGE>After removing repeated categories, your bot used 7 categories</MESSAGE>
-<MESSAGE>Your bot answered 1 questions incorrectly.</MESSAGE>
-<MESSAGE>File reece-turner-responses.txt has more details of your bots responses.</MESSAGE>
-<MESSAGE>Common mistakes are typos or extra spaces</MESSAGE>
-<MESSAGE>Your bot answered incorrectly for 1 questions that require a sense of context.</MESSAGE>
+<MESSAGE>Your bot answered every question correctly using 7 categories</MESSAGE>
+<MESSAGE>You can improve your score by remembering context and what the conversation is talking about.</MESSAGE>
+<MESSAGE>Your knowledge base duplicated information so you mark is restricted to a maximum of 65.</MESSAGE>
+<MESSAGE>Congratulations, you have beaten Jim's score!</MESSAGE>

@@ -103,7 +103,7 @@
         <template>
             <think><set name="state"><get name="context"/></set></think>
             <condition name="state">
-                <li value="conversation">Because some words like that and it can only be understood in the context of previous sentences</li>
+                <li value="conversation">Because some words like that and it can only be understood in the context of previous sentences.</li>
                 <li value="variables">Because it allows us to make statements that apply to classes of things or questions.</li>
                 <li value="a fact">To remind you that we take assessment offences very seriously.</li>
             </condition>
