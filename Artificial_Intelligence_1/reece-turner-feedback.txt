@@ -1,7 +1,6 @@
-<SCORE>23</SCORE>
-<MESSAGE>After removing repeated categories, your bot used 9 categories</MESSAGE>
-<MESSAGE>Your bot answered 22 questions incorrectly.</MESSAGE>
+<SCORE>44</SCORE>
+<MESSAGE>After removing repeated categories, your bot used 7 categories</MESSAGE>
+<MESSAGE>Your bot answered 1 questions incorrectly.</MESSAGE>
 <MESSAGE>File reece-turner-responses.txt has more details of your bots responses.</MESSAGE>
 <MESSAGE>Common mistakes are typos or extra spaces</MESSAGE>
-<MESSAGE>For 10 questions your bot did not have a matching category.</MESSAGE>
-<MESSAGE>Your bot answered incorrectly for 3 questions that require a sense of context.</MESSAGE>
+<MESSAGE>Your bot answered incorrectly for 1 questions that require a sense of context.</MESSAGE>

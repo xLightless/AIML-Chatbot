@@ -1,0 +1,203 @@
+<aiml>
+    <!-- Q02 Q14 Q20 -->
+    <category>
+        <pattern>* GENERIC KNOWLEDGE</pattern>
+        <template>
+            <think><set name="prefix"><star/></set></think>
+            <condition name="prefix">
+                <!-- generic knowledge -->
+                <li value="What is">Generic knowledge is relevant to more than one application or domain.</li>
+                <li value="Give me a definition of">Generic knowledge is relevant to more than one application or domain.</li>
+                <li value="Tell me about">Generic knowledge is relevant to more than one application or domain.</li>
+
+                <!-- long-term generic knowledge -->
+                <!-- <li value="Provide me an example of long term">The formal specification of the python programming language.</li>
+                <li value="Illustrate the concept of long-term"></li>
+                <li value="Give me an example of long-term"></li> -->
+                
+                <!-- short-term generic knowledge -->
+                <!-- <li value="Provide me an example of short-term">The date today is an example as it may be useful in different contexts but only lasts 24 hours.</li>
+                <li value="Illustrate the concept of short-term">The date today is an example as it may be useful in different contexts but only lasts 24 hours.</li>
+                <li value="Give me an example of short-term">The date today is an example as it may be useful in different contexts but only lasts 24 hours.</li> -->
+            </condition>
+        </template>
+    </category>
+
+    <!-- Q03 Q15 Q21 -->
+    <category>
+        <pattern>* DOMAIN SPECIFIC KNOWLEDGE</pattern>
+        <template>
+            <think><set name="prefix"><star/></set></think>
+            <condition name="prefix">
+                <li value="What is">Domain-specific knowledge is only applicable to one specific application or domain.</li>
+                <li value="Give me a definition of">Domain-specific knowledge is only applicable to one specific application or domain.</li>
+                <li value="Tell me about">Domain-specific knowledge is only applicable to one specific application or domain.</li>
+            </condition>
+        </template>
+    </category>
+
+
+
+
+
+    <!-- Change this to answer long term and short term knowledge questions -->
+
+
+ 
+    <!-- Q00 Q12 Q18 - Q24 Q30 Q06 - Q07 Q25 Q31 -->
+    <!-- <category>
+        <pattern>* LONG TERM *</pattern>
+        <template>
+            <think>
+                <set name="suffix"><star index="2"/></set>
+            </think>
+
+            <condition name="suffix">
+                <li value="generic knowledge">The formal specification of the python programming language.</li>
+                <li value="domain specific knowledge">The formal specification of a particular machine learning algorithm.</li>
+                <li value="knowledge">Long-term is valid over a period of time.</li>
+            </condition>
+        </template>
+    </category> -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Q01 Q13 Q19 - Q08 Q26 Q32 - Q09 Q27 Q33 -->
+    <!-- <category>
+        <pattern>* SHORT TERM *</pattern>
+        <template>
+            <think>
+                <set name="prefix"><star index="1"/></set>
+                <set name="suffix"><star index="2"/></set>
+            </think>
+
+            <condition name="prefix">
+                <li value="Provide an example of">The date today is an example as it may be useful in different contexts but only lasts 24 hours.</li>
+            </condition>
+
+            <condition name="suffix">
+                <li value="generic knowledge">The date today is an example as it may be useful in different contexts but only lasts 24 hours.</li>
+                <li value="domain specific knowledge">The deadline for the submission of this coursework.</li>
+                <li value="knowledge">Short-term knowledge is only valid for a particular situation or run of a programme.</li>
+            </condition>
+        </template>
+    </category> -->
+
+    <!-- Q05 Q37 Q39 Q17 Q23 Q40 - Q10 Q29 Q36 Q38 -->
+    <!-- <category>
+        <pattern>* RULE</pattern>
+        <template>
+            <think>
+                <set name="prefix"><star/></set>
+            </think>
+
+            <condition name="prefix">
+
+                <li value="What is a">A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.</li>
+                <li value="Please mybot what is a">A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.</li>
+                <li value="Give me a definition of a">A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.</li>
+                <li value="Tell me about a">A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.</li>
+                <li value="Mybot please give me a definition of a">A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.</li>
+                
+
+                <li value="Give me an example of a">If isAlive(X) then NOT isDead(X).</li>
+                <li value="Illustrate the concept of a">If isAlive(X) then NOT isDead(X).</li>
+                <li value="Please provide an example of a">If isAlive(X) then NOT isDead(X).</li>
+                <li value="Please give me an example of a">If isAlive(X) then NOT isDead(X).</li>
+            
+            </condition>
+        </template>
+    </category> -->
+    
+    <!-- Q37 -->
+    <category>
+        <pattern>* RULE MYBOT</pattern>
+        <template>
+            A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.
+        </template>
+    </category>
+
+    <!-- Q04 Q16 Q22 - Q11 Q28 Q34/Q35 -->
+    <category>
+        <pattern>* FACT</pattern>
+        <template>
+            <think>
+                <set name="prefix"><star/></set>
+            </think>
+
+            <condition name="prefix">
+                
+                <li value="What is a">A fact is a statement which asserts that a relationship holds for an object-subject pair.</li>
+                <li value="Give me a definition of a">A fact is a statement which asserts that a relationship holds for an object-subject pair.</li>
+                <li value="Tell me about a">A fact is a statement which asserts that a relationship holds for an object-subject pair.</li>
+
+
+                <li value="Give me an example of a">All coursework for this module is run through automatic and effective plagiarism checks.</li>
+                <li value="Illustrate the concept of a">All coursework for this module is run through automatic and effective plagiarism checks.</li>
+                <li value="Please provide an example of a">
+                    All coursework for this module is run through automatic and effective plagiarism checks.
+                    <!-- Point towards SRAI or something to answer Q35 -->
+                    <srai>WHY IS KNOWING THAT USEFUL 1</srai>
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <!-- Q43/Q44 -->
+    <category>
+        <pattern>WHAT IS THE WAY AIML SUPPORTS CONTEXT DURING A CONVERSATION</pattern>
+        <template>
+            AIML supports context through the use of the that tag to refer to previous bot answers, and via setting variables such as topic.
+            <!-- Point towards SRAI or something to answer Q44 -->
+            <srai>WHY IS KNOWING THAT USEFUL 2</srai>
+        </template>
+    </category>
+
+    <!-- Q41/Q42 -->
+    <category>
+        <pattern>WHAT IS THE WAY THAT AIML ALLOWS VARIABLES IN ITS LONG TERM KNOWLEDGE</pattern>
+        <template>
+            AIML has wildcards and srai for that purpose.
+            <!-- Point towards SRAI or something to answer Q42 -->
+            <srai>WHY IS KNOWING THAT USEFUL 3</srai>
+        </template>
+    </category>
+
+    <!-- Q35 Q42 Q44 -->
+    <category>
+        <pattern>WHY IS KNOWING THAT USEFUL *</pattern>
+
+        <template>
+            <think>
+                <set name="step"><star index="1"/></set>
+            </think>
+
+            <condition>
+                <!-- Q35 -->
+                <li value="1">
+                    To remind you that we take assessment offences very seriously.
+                </li>
+
+                <!-- Q42 -->
+                <li value="2">
+                    Because some words like that and it can only be understood in the context of previous sentences.
+                </li>
+
+                <!-- Q44 -->
+                <li value="3">
+                    Because it allows us to make statements that apply to classes of things or questions.
+                </li>
+            </condition>
+        </template>
+
+    </category>
+</aiml>
